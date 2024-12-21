@@ -13,8 +13,8 @@ public class Main {
         System.out.println("Task 2");
         int check = 0;
         int one = 1;
-        int maхimum = 10;
-        while (check < maхimum) {
+        int limit = 10;
+        while (check < limit) {
             check = check + one;
             System.out.print(" " + check);
         }
@@ -38,9 +38,9 @@ public class Main {
         System.out.println("Task 4");
         int contribution = 15000;
         int money = 0;
-        int totaly = 12_000_000;
+        int total = 12_000_000;
         int months = 0;
-        while (money <= totaly) {
+        while (money <= total) {
             months++;
             contribution = contribution + (contribution / 100) * 7;
             money = money + contribution;
@@ -53,9 +53,9 @@ public class Main {
         System.out.println("Task 5");
         int contributionTwo = 15000;
         int moneyTwo = 0;
-        int totalyTwo = 12_000_000;
+        int totalTwo = 12_000_000;
         int monthsTwo = 0;
-        while (moneyTwo <= totalyTwo) {
+        while (moneyTwo <= totalTwo) {
             monthsTwo++;
             contributionTwo = contributionTwo + (contributionTwo / 100) * 7;
             moneyTwo = moneyTwo + contributionTwo;
@@ -76,16 +76,11 @@ public class Main {
 
         }
         System.out.println("Task 7");
-        int day = 5;
-        int inAMonth = 31;
-        while (day <= inAMonth) {
-            day++;
-            if (day % 7 == 0) {
-                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
-            }
-
-
+        for (int i = 1; i <= 31; i = i+7) {
+            System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
         }
+
+
         System.out.println("Task 8");
         int year = 1824;
         int lastYear = 2124;
